@@ -11,6 +11,7 @@ import { Footer } from "./component/Footer";
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
+
 function App() {
   const location = useLocation();
 
@@ -19,7 +20,6 @@ function App() {
   return (
     <div id="App">
       <Header />
-      {/* <Grid /> */}
       <Routes>
         <Route path="/addct" element={<Home />} />
         <Route path="/addct/all" element={<All />} />
