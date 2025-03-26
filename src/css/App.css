@@ -1,0 +1,5 @@
+#App {
+  position: relative;
+  width: 100vw; height: fit-content;
+  min-width: 1920px;
+}

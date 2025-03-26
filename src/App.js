@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/global.css"
+import "./css/App.css"
+import { Header } from "./component/Header";
+import { Home } from "./page/Home";
+import { All } from "./page/All";
+import { Brand } from "./page/Brand";
+import { Note } from "./page/Note"
+import { Storelist } from "./page/Storelist";
+import { Detail } from "./page/Detail";
+import { Footer } from "./component/Footer";
+import { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => { window.scrollTo(0, 0) }, [location]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="App">
+      <Header />
+      {/* <Grid /> */}
+      <Routes>
+        <Route path="/addct" element={<Home />} />
+        <Route path="/addct/all" element={<All />} />
+        <Route path="/addct/brand" element={<Brand />} />
+        <Route path="/addct/note" element={<Note />} />
+        <Route path="/addct/storelist" element={<Storelist />} />
+        <Route path="/addct/detail" element={<Detail />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export default App
