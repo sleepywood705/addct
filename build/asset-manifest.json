@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/addct/static/css/main.e305b496.css",
+    "main.js": "/addct/static/js/main.9b54b295.js",
+    "static/media/kakao.jpg": "/addct/static/media/kakao.0d8c60cf5f3534d3f84d.jpg",
+    "static/media/Elegance.otf": "/addct/static/media/Elegance.bb9646b497cdf63cd2f8.otf",
+    "index.html": "/addct/index.html",
+    "main.e305b496.css.map": "/addct/static/css/main.e305b496.css.map",
+    "main.9b54b295.js.map": "/addct/static/js/main.9b54b295.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e305b496.css",
+    "static/js/main.9b54b295.js"
+  ]
+}
